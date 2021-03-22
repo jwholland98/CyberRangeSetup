@@ -22,8 +22,5 @@ sudo echo "sudo /usr/local/sbin/vsftpd &" > /home/user/start_vsftpd.sh
 sudo chmod +x /home/user/start_vsftpd.sh
 (sudo crontab -u root -l; echo "@reboot /home/user/start_vsftpd.sh") | sudo crontab -u root -
 
-mkdir /home/user/ps/
-cd /home/user/ps/
-sudo echo -e "#include<unistd.h>\\nvoid main()\\n{ setuid(0);\\n setgid(0);\\n system(\"ps\");\\n}"
-sudo gcc demo.c -o shell
-sudo chmod u+s shell
+echo -e "Desktop pass for user user: toor" > /home/user/pass_note.txt
+chmod 600 /home/user/pass_note.txt
