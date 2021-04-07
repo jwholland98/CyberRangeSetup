@@ -1,6 +1,6 @@
-cd ~/Documents
+cd /home/user/Documents/
 git clone https://github.com/nikdubois/vsftpd-2.3.4-infected.git
-cd vsftpd-2.3.4-infected/
+cd /home/user/Documents/vsftpd-2.3.4-infected/
 sudo apt-get update
 sudo apt-get -y install make gcc
 make
@@ -31,4 +31,4 @@ cd PompeiiSite
 sudo chmod +x install_webserver.sh
 sudo chmod +x install_mysql.sh
 sudo ./install_webserver.sh
-sudo ./install_mysql.sh
+sudo ./install_mysql.shs
