@@ -24,3 +24,11 @@ sudo chmod +x /home/user/start_vsftpd.sh
 
 echo -e "Desktop pass for user user: toor" > /home/user/pass_note.txt
 chmod 600 /home/user/pass_note.txt
+
+cd /home/user/
+git clone --single-branch --branch stable https://gitlab.com/mdlayer42/PompeiiSite.git
+cd PompeiiSite
+sudo chmod +x install_webserver.sh
+sudo chmod +x install_mysql.sh
+sudo ./install_webserver.sh
+sudo ./install_mysql.sh
