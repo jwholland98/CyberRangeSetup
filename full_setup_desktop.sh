@@ -7,3 +7,4 @@ sudo gcc demo.c -o shell
 sudo chmod u+s shell
 
 sudo deluser user sudo
+reboot
